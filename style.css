@@ -53,7 +53,7 @@ body {
     color: var(--form-bg-color);
     position: absolute;
     width: 100%;
-    bottom: 24px;
+    bottom: 32px;
     margin-top: auto;
     text-align: center;
 }
@@ -70,7 +70,7 @@ body {
 
 .form-container {
     width: 600px;
-    height: 400px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,6 +91,7 @@ form {
 input {
     padding: 8px 16px;
     font-size: 1.1rem;
+    margin-bottom: 8px;
 }
 
 .form-row {
@@ -104,13 +105,70 @@ input {
 }
 
 button {
-    padding: 8px 16px;
-    margin-top: 8px;
-    font-size: 1rem;
-    width: 50%;
+    padding: 12px;
+    margin-top: 16px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 35%;
+    background-color: var(--font-img-color);
+    color: var(--form-bg-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 input[type="email"],
 input[type="password"] {
     width: 100%;
+}
+
+#create,
+#login {
+    color: var(--font-img-color);
+}
+
+#create {
+    font-size: 2rem;
+}
+
+#login {
+    font-size: 1rem;
+}
+
+#login>span>u {
+    cursor: pointer;
+}
+
+/* styling inputs */
+input[type="text"] {
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--font-img-color);
+    color: var(--font-img-color);
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="email"] {
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--font-img-color);
+    color: var(--font-img-color);
+}
+
+input[type="email"]:focus {
+    outline: none;
+}
+
+input[type="password"] {
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--font-img-color);
+    color: var(--font-img-color);
+}
+
+input[type="password"]:focus {
+    outline: none;
 }
